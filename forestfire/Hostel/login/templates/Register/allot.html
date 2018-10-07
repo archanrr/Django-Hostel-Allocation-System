@@ -1,0 +1,17 @@
+<html>
+    <center>
+        <head>
+            <h1>Room Details</h1>
+        </head>
+        <body>
+            <label>Name:{{ student.name }}</label><br>
+            <label>Hostel:{{ hostel }}</label><br>
+            <label>Room:{{ student.roomid.id }}</label><br>
+            <label>Congrats</label><br>
+        </body>
+        {% for record in full %}
+        RoomNo:{{ record.roomid.id}}-Name:{{record.name }}-Dept:{{ record.dept }}-Year:{{ record.year}}<br>
+        {% endfor %}
+    </center>
+    
+</html>
